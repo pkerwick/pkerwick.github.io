@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML & CSS Cheatsheet</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML & CSS Cheatsheet</h1>
+    </header>
+    <main>
+      <h2>CSS Properties</h2>
+      <div id="css_properties">
+        <section id="position">
+          <h3>Position</h3>
+          <table>
+            <thead>
+              <th class="table_header">Syntax</th>
+              <th class="table_header">Values</th>
+              <th class="table_header">Definition</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="syntax">position: static;</td>
+                <td class="values">none</td>
+                <td class="definition">
+                  The element is positioned according to the normal flow of the
+                  document. The top, right, bottom, left, and z-index properties
+                  have no effect. This is the default value.
+                </td>
+              </tr>
+              <tr>
+                <td class="syntax">position: relative;</td>
+                <td class="values">top: 40px; left: 40px;</td>
+                <td class="definition">
+                  The element is positioned according to the normal flow of the
+                  document, and then offset relative to itself based on the
+                  values of top, right, bottom, and left. The offset does not
+                  affect the position of any other elements; thus, the space
+                  given for the element in the page layout is the same as if
+                  position were static.
+                </td>
+              </tr>
+              <tr>
+                <td class="syntax">position: absolute;</td>
+                <td class="values">top: 40px; left: 40px;</td>
+                <td class="definition">
+                  The element is removed from the normal document flow, and no
+                  space is created for the element in the page layout. It is
+                  positioned relative to its closest positioned ancestor, if
+                  any; otherwise, it is placed relative to the initial
+                  containing block. Its final position is determined by the
+                  values of top, right, bottom, and left.
+                </td>
+              </tr>
+              <tr>
+                <td class="syntax">position: fixed;</td>
+                <td class="values">top: 40px; left: 40px;</td>
+                <td class="definition">
+                  The element is removed from the normal document flow, and no
+                  space is created for the element in the page layout. It is
+                  positioned relative to the initial containing block
+                  established by the viewport, except when one of its ancestors
+                  has a transform, perspective, or filter property set to
+                  something other than none (see the CSS Transforms Spec), in
+                  which case that ancestor behaves as the containing block.
+                  (Note that there are browser inconsistencies with perspective
+                  and filter contributing to containing block formation.) Its
+                  final position is determined by the values of top, right,
+                  bottom, and left.
+                </td>
+              </tr>
+              <tr>
+                <td class="syntax">position: sticky;</td>
+                <td class="values">top: 20px;</td>
+                <td class="definition">
+                  The element is positioned according to the normal flow of the
+                  document, and then offset relative to its nearest scrolling
+                  ancestor and containing block (nearest block-level ancestor),
+                  including table-related elements, based on the values of top,
+                  right, bottom, and left. The offset does not affect the
+                  position of any other elements.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <hr />
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
